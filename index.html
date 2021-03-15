@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="images/logo-macbook.svg" alt="logo" class="navbar__logo" />
+      <input
+        type="text"
+        class="navbar__search"
+        placeholder="О чем другие думают?"
+      />
+      <img src="images/icons_search.svg" alt="search" class="search-icon" />
+      <button class="navbar__button button">Для организаций</button>
+
+      <div class="navbar__modal">
+        <h3 class="navbar__modal__title">Результаты поиска:</h3>
+        <div class="navbar__modal__cards">
+          <div class="navbar__modal__card">
+            <img
+              src="images/1.png"
+              alt="academy img"
+              class="navbar__modal__card__img"
+            />
+            <div class="navbar__modal__info">
+              <h2 class="navbar__modal__info__title">IT-Academy</h2>
+              <p class="navbar__modal__info__courses">
+                HTML, CSS, Javascript и др.
+              </p>
+              <button class="navbar__modal__info__button">Подробнее</button>
+            </div>
+          </div>
+          <div class="navbar__modal__card">
+            <img
+              src="images/1.png"
+              alt="academy img"
+              class="navbar__modal__card__img"
+            />
+            <div class="navbar__modal__info">
+              <h2 class="navbar__modal__info__title">IT-Academy</h2>
+              <p class="navbar__modal__info__courses">
+                HTML, CSS, Javascript и др.
+              </p>
+              <button class="navbar__modal__info__button">Подробнее</button>
+            </div>
+          </div>
+          <div class="navbar__modal__card">
+            <img
+              src="images/1.png"
+              alt="academy img"
+              class="navbar__modal__card__img"
+            />
+            <div class="navbar__modal__info">
+              <h2 class="navbar__modal__info__title">IT-Academy</h2>
+              <p class="navbar__modal__info__courses">
+                HTML, CSS, Javascript и др.
+              </p>
+              <button class="navbar__modal__info__button">Подробнее</button>
+            </div>
+          </div>
+        </div>
+        <a href="#!" class="navbar__modal__link">Смотреть все</a>
+      </div>
+    </nav>
+
+    <nav class="navbar-mob">
+      <img src="images/logo-macbook.svg" alt="logo" class="navbar__logo" />
+      <div class="input__container">
+        <input
+          type="text"
+          class="navbar__search"
+          id="navbar-mob__search"
+          placeholder="О чем другие думают?"
+        />
+        <img src="images/icons_search.svg" alt="search" class="search-icon" />
+        <div class="navbar__modal" id="navbar-mob__modal">
+          <h3 class="navbar__modal__title">Результаты поиска:</h3>
+          <div class="navbar__modal__cards">
+            <div class="navbar__modal__card">
+              <img
+                src="images/1.png"
+                alt="academy img"
+                class="navbar__modal__card__img"
+              />
+              <div class="navbar__modal__info">
+                <h2 class="navbar__modal__info__title">IT-Academy</h2>
+                <p class="navbar__modal__info__courses">
+                  HTML, CSS, Javascript и др.
+                </p>
+                <button class="navbar__modal__info__button">Подробнее</button>
+              </div>
+            </div>
+            <div class="navbar__modal__card">
+              <img
+                src="images/1.png"
+                alt="academy img"
+                class="navbar__modal__card__img"
+              />
+              <div class="navbar__modal__info">
+                <h2 class="navbar__modal__info__title">IT-Academy</h2>
+                <p class="navbar__modal__info__courses">
+                  HTML, CSS, Javascript и др.
+                </p>
+                <button class="navbar__modal__info__button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <a href="#!" class="navbar__modal__link">Смотреть все</a>
+        </div>
+      </div>
+      <img src="images/navbar-menu.svg" alt="menu" class="navbar__hamburger" />
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item">Отзывы</li>
+        <li class="navbar__menu__item">Для организаций</li>
+        <li class="navbar__menu__item">Цель проекта</li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <section class="reviews-box">
+        <div class="reviews__info swiper-container-text">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h1 class="reviews__info__title">Реальные отзывы</h1>
+              <p class="reviews__info__description">
+                Как предсказывают футурологи повторный контакт интуитивно
+                трансформирует клиентский спрос
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <h1 class="reviews__info__title">Ваше Мнение Ценно</h1>
+              <p class="reviews__info__description">
+                Как предсказывают футурологи повторный контакт интуитивно
+                трансформирует клиентский спрос
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <h1 class="reviews__info__title">Вы не ошиблись</h1>
+              <p class="reviews__info__description">
+                Как предсказывают футурологи повторный контакт интуитивно
+                трансформирует клиентский спрос
+              </p>
+            </div>
+          </div>
+          <div class="pagination-text"></div>
+
+          <button class="reviews__button button">Перейти к отзывам</button>
+        </div>
+        <div class="reviews__img__container">
+          <img
+            src="images/laptop__review.svg"
+            alt="reviews"
+            class="reviews__img"
+          />
+        </div>
+      </section>
+
+      <section class="centers">
+        <div class="centers-box">
+          <h1 class="centers__title">Учебные центры</h1>
+          <div class="centers__dropdowns">
+            <div class="centers__dropdown" id="drop-1">
+              <p class="centers__dropdown-name">Поиск по району</p>
+              <img
+                src="images/chevron-down.svg"
+                alt="open"
+                class="centers__dropdown-arrow"
+                id="arrow_1"
+              />
+              <ul class="dropdown__list" id="drop-menu-1">
+                <li class="dropdown__item">Мирзо-Улугбекский</li>
+                <li class="dropdown__item">Юнусабадский</li>
+                <li class="dropdown__item">Мирабадский</li>
+                <li class="dropdown__item">Яшнабадский</li>
+                <li class="dropdown__item">Чиланзарский</li>
+                <li class="dropdown__item">Сергелийский</li>
+                <li class="dropdown__item">Чиланзарский</li>
+                <li class="dropdown__item">Учтепинский</li>
+                <li class="dropdown__item">Бектемирский</li>
+                <li class="dropdown__item">Алмазарский</li>
+                <li class="dropdown__item">Яккасарайский</li>
+                <li class="dropdown__item">Шайхантахурский</li>
+              </ul>
+            </div>
+            <div class="centers__dropdown" id="drop-2">
+              <p class="centers__dropdown-name">Фильтр по цене</p>
+              <img
+                src="images/chevron-down.svg"
+                alt="open"
+                class="centers__dropdown-arrow"
+                id="arrow_2"
+              />
+              <ul class="dropdown__list" id="drop-menu-2">
+                <li class="dropdown__item" id="high">Высокая - низкая</li>
+                <li class="dropdown__item" id="low">Низкая - высокая</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="courses">
+          <p class="course" id="c-1">Программирование</p>
+          <p class="course" id="c-2">Точные науки</p>
+          <p class="course" id="c-3">Гуманитарные науки</p>
+          <p class="course" id="c-4">Естественные науки</p>
+        </div>
+
+        <div class="carousel">
+          <div class="carousel-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-carousel-slide">
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+            </div>
+              <div class="swiper-slide swiper-carousel-slide">
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+            </div>
+              <div class="swiper-slide swiper-carousel-slide">
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="pagination__buttons">
+              <img src="images/laptop/carousel-left.svg" alt="carousel left" class="carousel__left">
+              
+              <div class="pagination-carousel"></div>
+              <img src="images/laptop/carousel-right.svg" alt="carousel right" class="carousel__right">
+            </div>
+            
+          </div>
+        </div>
+
+
+        <div class="carousel-mob">
+          <div class="carousel-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-carousel-slide">
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+            </div>
+              <div class="swiper-slide swiper-carousel-slide">
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+            </div>
+              <div class="swiper-slide swiper-carousel-slide">
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+              <div class="carousel__item">
+                
+                <div class="carousel__item__info">
+                  <h2 class="carousel__item__title">IT-Academy</h2>
+                  <p class="carousel__item__courses">
+                    HTML, CSS, Javascript и др.
+                  </p>
+                  <p class="carousel__item__price">Цена: От 1 млн до 1.6 млн</p>
+                  <button class="carousel__item__button">Оставить отзыв</button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="pagination__buttons">
+              <img src="images/laptop/carousel-left.svg" alt="carousel left" class="carousel__left">
+              
+              <div class="pagination-carousel"></div>
+              <img src="images/laptop/carousel-right.svg" alt="carousel right" class="carousel__right">
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="purpose">
+        <h1 class="purpose__title">Цель проекта</h1>
+        <div class="purpose-box">
+          <div class="purpose__img__container">
+            <img src="images/laptop/purpose.svg" alt="purpose img" class="purpose__img">
+          </div>
+          <div class="purpose__info">
+            <h2 class="purpose__info__title">Что мы несем в массы?</h2>
+            <p class="purpose__info__description">Векторное поле нетривиально. Двойной интеграл, следовательно, обуславливает контент, не считаясь с затратами.</p>
+            <p class="purpose__info__description">Поведенческий таргетинг позиционирует типичный экстремум функции. Натуральный логарифм, очевидно, продуцирует криволинейный интеграл.
+            </p>
+            <h2 class="purpose__info__title">Как стать частью проекта?</h2>
+            <p class="purpose__info__description">Двойной интеграл, следовательно, обуславливает контент, не считаясь с затратами.
+            </p>
+            <h2 class="purpose__info__title">Как стать частью проекта</h2>
+            <p class="purpose__info__description">Векторное поле нетривиально. Двойной интеграл, следовательно, обуславливает контент, не считаясь с затратами.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="application">
+        <h1 class="application__title">Оставьте заявку</h1>
+        <p class="application__description">Ваша организация будет добавлена после модерации. Фокус-группа переворачивает фирменный стиль, используя опыт предыдущих кампаний. В общем, пустое подмножество расточительно программирует нормальный функциональный анализ, осознав маркетинг как часть производства. К тому же процесс стратегического планирования нетривиален. Фокус-группа переворачивает фирменный стиль, используя опыт предыдущих кампаний.</p>
+        <div class="application-box">
+          <form class="application__form">
+            <div class="application__input-container">
+              <p class="application__input__title">Ваше полное имя (ФИО):</p>
+              <input type="text" class="application__input" placeholder="Ахмедов Шахзод Бахтиерович">
+            </div>
+            <div class="application__input-container">
+              <p class="application__input__title">Название организации:</p>
+              <input type="text" class="application__input" placeholder="ООО 'Организация'">
+            </div>
+            <div class="application__input-container">
+              <p class="application__input__title">Контактный номер:</p>
+              <input type="text" class="application__input" placeholder="+998901234567">
+            </div>
+            <div class="application__input-container">
+              <p class="application__input__title">Комментарии к заявке:</p>
+              <textarea class="application__textarea" placeholder="Ваш комментарий..."></textarea>
+            </div>
+            <button class="application__button button">Отправить</button>
+          </form>
+          <div class="application__img__container">
+            <img src="images/laptop/application.svg" alt="" class="application__img">
+          </div>
+        </div>
+      </section>
+
+      <section class="application-mob">
+        <h1 class="application__title">Оставьте заявку</h1>
+        <p class="application__description">Ваша организация будет добавлена после модерации. Фокус-группа переворачивает фирменный стиль, используя опыт предыдущих кампаний. В общем, пустое подмножество расточительно программирует нормальный функциональный анализ, осознав маркетинг как часть производства. К тому же процесс стратегического планирования нетривиален. Фокус-группа переворачивает фирменный стиль, используя опыт предыдущих кампаний.</p>
+        <div class="application-box">
+          <form class="application__form">
+            <div class="application__input-container">
+              <p class="application__input__title">Ваше полное имя (ФИО):</p>
+              <input type="text" class="application__input" placeholder="Ахмедов Шахзод Бахтиерович">
+            </div>
+            <div class="application__input-container">
+              <p class="application__input__title">Название организации:</p>
+              <input type="text" class="application__input" placeholder="ООО 'Организация'">
+            </div>
+            <div class="application__input-container">
+              <p class="application__input__title">Контактный номер:</p>
+              <input type="text" class="application__input" placeholder="+998901234567">
+            </div>
+            <div class="application__input-container">
+              <p class="application__input__title">Комментарии к заявке:</p>
+              <textarea class="application__textarea" placeholder="Ваш комментарий..."></textarea>
+            </div>
+            <button class="application__button button">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <img src="images/logo-macbook.svg" alt="" class="footer__logo">
+      <div class="footer-box">
+        <div class="footer__socials"><img src="images/laptop/instagram.svg" alt="instagram" class="footer__social"><img src="images/laptop/facebook.svg" alt="facebook" class="footer__social"><img src="images/laptop/telegram-alt.svg" alt="telegram" class="footer__social"></div>
+        <button class="footer__button button">Обратная связь</button>
+      </div>
+    </footer>
+
+    <script src="swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+      var swiper_text = new Swiper(".swiper-container-text", {
+        slidesPerView: 1,
+        // speed: 1,
+        // spaceBetween: 50,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: true,
+        },
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+        pagination: {
+          el: ".pagination-text",
+          clickable: true,
+        },
+      });
+
+      var swiper_carousel = new Swiper(".carousel-container", {
+        slidesPerView: 1,
+        spaceBetween: 500,
+        loop: true,
+        pagination: {
+          el: ".pagination-carousel",
+          clickable: true,
+        },
+        navigation: {
+        nextEl: '.carousel__right',
+        prevEl: '.carousel__left',
+      },
+      });
+    </script>
+  </body>
+</html>
