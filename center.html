@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="center.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <nav class="navbar">
+    <img src="images/logo-macbook.svg" alt="logo" class="navbar__logo" />
+    <input
+      type="text"
+      class="navbar__search"
+      placeholder="О чем другие думают?"
+    />
+    <img src="images/icons_search.svg" alt="search" class="search-icon" />
+    <a href="/" class="navbar__back">На главную</a>
+    <button class="navbar__button button">Для организаций</button>
+
+    <div class="navbar__modal">
+      <h3 class="navbar__modal__title">Результаты поиска:</h3>
+      <div class="navbar__modal__cards">
+        <div class="navbar__modal__card">
+          <img
+            src="images/1.png"
+            alt="academy img"
+            class="navbar__modal__card__img"
+          />
+          <div class="navbar__modal__info">
+            <h2 class="navbar__modal__info__title">IT-Academy</h2>
+            <p class="navbar__modal__info__courses">
+              HTML, CSS, Javascript и др.
+            </p>
+            <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+          </div>
+        </div>
+        <div class="navbar__modal__card">
+          <img
+            src="images/1.png"
+            alt="academy img"
+            class="navbar__modal__card__img"
+          />
+          <div class="navbar__modal__info">
+            <h2 class="navbar__modal__info__title">IT-Academy</h2>
+            <p class="navbar__modal__info__courses">
+              HTML, CSS, Javascript и др.
+            </p>
+            <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+          </div>
+        </div>
+        <div class="navbar__modal__card">
+          <img
+            src="images/1.png"
+            alt="academy img"
+            class="navbar__modal__card__img"
+          />
+          <div class="navbar__modal__info">
+            <h2 class="navbar__modal__info__title">IT-Academy</h2>
+            <p class="navbar__modal__info__courses">
+              HTML, CSS, Javascript и др.
+            </p>
+            <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <a href="search.html" class="navbar__modal__link">Смотреть все</a>
+    </div>
+  </nav>
+
+
+  <nav class="navbar-mob">
+    <img src="images/logo-macbook.svg" alt="logo" class="navbar__logo" />
+    <div class="input__container">
+      <input
+        type="text"
+        class="navbar__search"
+        id="navbar-mob__search"
+        placeholder="О чем другие думают?"
+      />
+      <img src="images/icons_search.svg" alt="search" class="search-icon" />
+      <div class="navbar__modal" id="navbar-mob__modal">
+        <h3 class="navbar__modal__title">Результаты поиска:</h3>
+        <div class="navbar__modal__cards">
+          <div class="navbar__modal__card">
+            <img
+              src="images/1.png"
+              alt="academy img"
+              class="navbar__modal__card__img"
+            />
+            <div class="navbar__modal__info">
+              <h2 class="navbar__modal__info__title">IT-Academy</h2>
+              <p class="navbar__modal__info__courses">
+                HTML, CSS, Javascript и др.
+              </p>
+              <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+            </div>
+          </div>
+          <div class="navbar__modal__card">
+            <img
+              src="images/1.png"
+              alt="academy img"
+              class="navbar__modal__card__img"
+            />
+            <div class="navbar__modal__info">
+              <h2 class="navbar__modal__info__title">IT-Academy</h2>
+              <p class="navbar__modal__info__courses">
+                HTML, CSS, Javascript и др.
+              </p>
+              <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <a href="search.html" class="navbar__modal__link">Смотреть все</a>
+      </div>
+    </div>
+    <img src="images/navbar-menu.svg" alt="menu" class="navbar__hamburger" />
+    <ul class="navbar__menu">
+      <li class="navbar__menu__item"><a href="#!" class="navbar__menu__link">Отзывы</a></li>
+      <li class="navbar__menu__item"><a href="#!" class="navbar__menu__link">Для организаций</a></li>
+      <li class="navbar__menu__item"><a href="#!" class="navbar__menu__link">Цель проекта</a></li>
+    </ul>
+  </nav>
+
+  <img src="images/center-hero.jpg" alt="it academy" class="hero-img-desktop">
+  <img src="images/laptop/center-hero.jpg" alt="it academy" class="hero-img-laptop">
+  <img src="images/ipad/center-hero.jpg" alt="it academy" class="hero-img-ipad">
+  <img src="images/mobile/center-hero.jpg" alt="it academy" class="hero-img-mobile">
+
+  <!-- <img src="images/center-hero.jpg" alt="" class="hero-test"> -->
+
+  <div class="container">
+    <section class="academy">
+      <div class="academy-header">
+        <img src="images/laptop/academy-logo.svg" alt="" class="academy-logo">
+        <h1 class="academy-name">IT-Academy</h1>
+      </div>
+      <h4 class="academy-price">Цена: от 1 млн до 1.6 млн</h4>
+      <h2 class="academy-programming">Программирование</h2>
+      <div class="courses">
+        <p class="course">HTML</p>
+        <p class="course">Javascript</p>
+        <p class="course">Vue.js</p>
+        <p class="course">CSS</p>
+        <p class="course">Python</p>
+        <p class="course">Django</p>
+        <p class="course">SQL</p>
+      </div>
+
+      <p class="academy-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta reprehenderit asperiores debitis odio quis laborum atque cumque, quam soluta earum. Illum corrupti nostrum, repellat aut cum porro blanditiis fugit autem vel cupiditate! Iste itaque cumque facilis. Dolorem blanditiis iusto corrupti, saepe porro corporis sit voluptatum pariatur deleniti quibusdam iure aperiam voluptas veniam qui ea, ab molestias id beatae placeat vitae similique? Mollitia sapiente distinctio<span class="dot">...</span><span class="more"> adipisci illo accusantium harum repellendus, corrupti obcaecati minus veniam commodi nostrum cupiditate ratione, soluta in maxime suscipit quidem. Dignissimos vero sit consequatur repellat explicabo. Tempore veritatis repellendus animi sunt facere repellat iusto, eos quam necessitatibus nesciunt possimus officia, quod repudiandae delectus! Hic praesentium laborum ab voluptatum, iste architecto tempore temporibus doloremque, voluptatem voluptate et quasi dolor dolore quas at ipsam obcaecati!</span></p>
+
+      <button class="academy-more">Читать далее...</button>
+
+      <div class="academy__info">
+        <div class="academy__info-box">
+
+        
+        <h3 class="academy__contact">Контакты:</h3>
+          <div class="academy__contact-box">
+            <img src="images/laptop/call.svg" alt="call" class="contact-icon">
+            <p class="academy__details">+998-71-200-43-34, +998-71-200-43-34</p>
+          </div>
+          <div class="academy__contact-box">
+            <img src="images/laptop/web.svg" alt="web" class="contact-icon">
+            <p class="academy__details"><a href="#!" class="academy__link">https://it-academy.uz/</a></p>
+          </div>
+          <div class="academy__contact-box">
+            <img src="images/laptop/email.svg" alt="email" class="contact-icon">
+            <p class="academy__details">itacademy@gmail.com</p>
+          </div>
+          <h3 class="academy__workinghours">Режим работы:</h3>
+          <p class="academy__time">Понедельник-Суббота
+            с 10:00 по 20:00</p>
+          </div>
+
+          <div class="academy__info__map__container">
+            <img src="images/map.jpg" alt="map address" class="academy__info__map__address">
+          </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <img src="images/logo-macbook.svg" alt="" class="footer__logo">
+    <div class="footer-box">
+      <div class="footer__socials"><img src="images/laptop/instagram.svg" alt="instagram" class="footer__social"><img src="images/laptop/facebook.svg" alt="facebook" class="footer__social"><img src="images/laptop/telegram-alt.svg" alt="telegram" class="footer__social"></div>
+      <button class="footer__button button">Обратная связь</button>
+    </div>
+  </footer>
+  
+  <script src="center.js"></script>
+</body>
+</html>
