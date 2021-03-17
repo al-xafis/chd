@@ -1637,7 +1637,8 @@ body {
   }
 
   .application__img {
-
+    width: 545px;
+    height: 506px;
   }
 }
 
