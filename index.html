@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <!-- NAVBAR START -->
+
     <nav class="navbar">
       <img src="images/logo-macbook.svg" alt="logo" class="navbar__logo" />
       <input
@@ -69,6 +72,11 @@
       </div>
     </nav>
 
+
+    <!-- NAVBAR END -->
+
+
+    <!-- NAVBAR MOBILE START -->
     <nav class="navbar-mob">
       <img src="images/logo-macbook.svg" alt="logo" class="navbar__logo" />
       <div class="input__container">
@@ -122,7 +130,12 @@
       </ul>
     </nav>
 
+    <!-- NAVBAR MOBILE END  -->
+
     <div class="container">
+
+      <!-- REVIEWS START -->
+
       <section class="reviews-box">
         <div class="reviews__info swiper-container-text">
           <div class="swiper-wrapper">
@@ -160,6 +173,10 @@
           />
         </div>
       </section>
+
+      <!-- REVIEWS END -->
+
+      <!-- CENTERS START -->
 
       <section class="centers" id="centers">
         <div class="centers-box">
@@ -211,7 +228,9 @@
           <p class="course" id="c-4">Естественные науки</p>
         </div>
 
-      </div>
+    </div>
+
+    <!-- CAROUSEL START -->
 
         <div class="carousel">
           <div class="carousel-container">
@@ -531,6 +550,10 @@
           </div>
         </div>
 
+        <!-- CAROUSEL END -->
+
+
+        <!-- CAROUSEL MOBILE START -->
 
         <div class="carousel-mob">
           <div class="carousel-container">
@@ -617,7 +640,13 @@
             
           </div>
         </div>
+
+        <!-- CAROUSEL MOBILE END -->
       </section>
+
+      <!-- CENTERS END -->
+
+      <!-- PURPOSE START -->
       <div class="container">
       <section class="purpose">
         <h1 class="purpose__title">Цель проекта</h1>
@@ -639,6 +668,10 @@
           </div>
         </div>
       </section>
+
+      <!-- PURPOSE END -->
+
+      <!-- APPLICATION START -->
 
       <section class="application" id="application">
         <h1 class="application__title">Оставьте заявку</h1>
@@ -669,6 +702,10 @@
         </div>
       </section>
 
+      <!-- APPLICATION END -->
+
+      <!-- APPLICATION MOBILE START -->
+
       <section class="application-mob" id="application">
         <h1 class="application__title">Оставьте заявку</h1>
         <p class="application__description">Ваша организация будет добавлена после модерации. Фокус-группа переворачивает фирменный стиль, используя опыт предыдущих кампаний. В общем, пустое подмножество расточительно программирует нормальный функциональный анализ, осознав маркетинг как часть производства. К тому же процесс стратегического планирования нетривиален. Фокус-группа переворачивает фирменный стиль, используя опыт предыдущих кампаний.</p>
@@ -694,7 +731,12 @@
           </form>
         </div>
       </section>
+
+      <!-- APPLICATION MOBILE END -->
+
     </div>
+
+    <!-- FOOTER START  -->
 
     <footer class="footer">
       <img src="images/logo-macbook.svg" alt="" class="footer__logo">
@@ -704,41 +746,9 @@
       </div>
     </footer>
 
+    <!-- FOOTER END -->
+
     <script src="swiper-bundle.min.js"></script>
     <script src="app.js"></script>
-
-    <script>
-      var swiper_text = new Swiper(".swiper-container-text", {
-        slidesPerView: 1,
-        // speed: 1,
-        // spaceBetween: 50,
-        autoplay: {
-          delay: 2000,
-          disableOnInteraction: true,
-        },
-        effect: "fade",
-        fadeEffect: {
-          crossFade: true,
-        },
-        pagination: {
-          el: ".pagination-text",
-          clickable: true,
-        },
-      });
-
-      var swiper_carousel = new Swiper(".carousel-container", {
-        slidesPerView: 1,
-        spaceBetween: 500,
-        loop: true,
-        pagination: {
-          el: ".pagination-carousel",
-          clickable: true,
-        },
-        navigation: {
-        nextEl: '.carousel__right',
-        prevEl: '.carousel__left',
-      },
-      });
-    </script>
   </body>
 </html>

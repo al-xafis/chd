@@ -120,5 +120,38 @@ document.querySelector('#c-4').addEventListener('click', e => {
 })
 
 
+// SWIPER 
+
+var swiper_text = new Swiper(".swiper-container-text", {
+  slidesPerView: 1,
+  // speed: 1,
+  // spaceBetween: 50,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: true,
+  },
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+  pagination: {
+    el: ".pagination-text",
+    clickable: true,
+  },
+});
+
+var swiper_carousel = new Swiper(".carousel-container", {
+  slidesPerView: 1,
+  spaceBetween: 500,
+  loop: true,
+  pagination: {
+    el: ".pagination-carousel",
+    clickable: true,
+  },
+  navigation: {
+  nextEl: '.carousel__right',
+  prevEl: '.carousel__left',
+},
+});
 
 

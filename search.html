@@ -9,6 +9,9 @@
   <title>Document</title>
 </head>
 <body>
+
+  <!-- NAVBAR START -->
+
   <nav class="navbar">
     <img src="images/logo-macbook.svg" alt="logo" class="navbar__logo" />
     <input
@@ -70,6 +73,10 @@
     </div>
   </nav>
 
+  <!-- NAVBAR END -->
+
+  <!-- NAVBAR MOBILE START -->
+
   <nav class="navbar-mob">
     <img src="images/logo-macbook.svg" alt="logo" class="navbar__logo" />
     <div class="input__container">
@@ -123,6 +130,9 @@
     </ul>
   </nav>
 
+  <!-- NAVBAR MOBILE END -->
+
+
   <div class="container" id="search">
     <div class="search">
       <h1 class="search__title">Результаты поиска</h1>
@@ -131,6 +141,8 @@
   </div>
 
   <h1 class="search__title-mob">Результаты поиска:</h1>
+
+  <!-- CAROUSEL START -->
 
   <div class="carousel">
     <div class="carousel-container">
@@ -449,7 +461,9 @@
     </div>
   </div>
 
+  <!-- CAROUSEL END -->
 
+  <!-- CAROUSEL MOBILE START -->
 
   <div class="carousel-mob">
     <div class="carousel-container">
@@ -568,7 +582,11 @@
     </div>
   </div>
 
+  <!-- CAROUSEL MOBILE END -->
+
   <button class="search__button-mob button">Все центры</button>
+
+  <!-- FOOTER START -->
 
   <footer class="footer">
     <img src="images/logo-macbook.svg" alt="" class="footer__logo">
@@ -578,24 +596,9 @@
     </div>
   </footer>
 
-
+  <!-- FOOTER END -->
 
   <script src="swiper-bundle.min.js"></script>
   <script src="search.js"></script>
-  <script>
-    var swiper_carousel = new Swiper(".carousel-container", {
-        slidesPerView: 1,
-        spaceBetween: 500,
-        loop: true,
-        pagination: {
-          el: ".pagination-carousel",
-          clickable: true,
-        },
-        navigation: {
-        nextEl: '.carousel__right',
-        prevEl: '.carousel__left',
-      },
-      });
-  </script>
 </body>
 </html>

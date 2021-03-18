@@ -24,3 +24,20 @@ searchbar.addEventListener('click', () => {
 mobsearchbar.addEventListener('click', () => {
   mobmodal.classList.toggle('block');
 })
+
+
+// SWIPER
+
+var swiper_carousel = new Swiper(".carousel-container", {
+  slidesPerView: 1,
+  spaceBetween: 500,
+  loop: true,
+  pagination: {
+    el: ".pagination-carousel",
+    clickable: true,
+  },
+  navigation: {
+  nextEl: '.carousel__right',
+  prevEl: '.carousel__left',
+},
+});
