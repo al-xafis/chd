@@ -78,28 +78,36 @@ dropMenu2.addEventListener('click', (e) => {
 
 // TICK
 
-document.querySelectorAll('#drop-menu-1 .dropdown__item').forEach(item => {
-  item.addEventListener('click', e => {
-    item.classList.toggle('tick');
-  })
-})
+// document.querySelectorAll('#drop-menu-1 .dropdown__item').forEach(item => {
+//   item.addEventListener('click', e => {
+//     item.classList.toggle('tick');
+//   })
+// })
 
-const high = document.getElementById('high');
-const low = document.getElementById('low');
+// const high = document.getElementById('high');
+// const low = document.getElementById('low');
 
-high.addEventListener('click', e => {
-  high.classList.toggle('tick');
-  if (low.classList.contains('tick')) {
-    low.classList.remove('tick');
-  }
-});
+// high.addEventListener('click', e => {
+//   high.classList.toggle('tick');
+//   if (low.classList.contains('tick')) {
+//     low.classList.remove('tick');
+//   }
+// });
 
-low.addEventListener('click', e => {
-  low.classList.toggle('tick');
-  if (high.classList.contains('tick')) {
-    high.classList.remove('tick');
-  }
-});
+// low.addEventListener('click', e => {
+//   low.classList.toggle('tick');
+//   if (high.classList.contains('tick')) {
+//     high.classList.remove('tick');
+//   }
+// });
+
+function selectOnlyThis(id) {
+  
+  document.getElementById('high').checked = false;
+  document.getElementById('low').checked = false;
+  document.getElementById(id).checked = true;
+  
+}
 
 // courses
 
@@ -142,7 +150,7 @@ var swiper_text = new Swiper(".swiper-container-text", {
 
 var swiper_carousel = new Swiper(".carousel-container", {
   slidesPerView: 1,
-  spaceBetween: 500,
+  spaceBetween: 3000,
   loop: true,
   pagination: {
     el: ".pagination-carousel",

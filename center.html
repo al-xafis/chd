@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="center.css">
+  <!-- <script src="map.js"></script> -->
   <title>Document</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
     />
     <img src="images/icons_search.svg" alt="search" class="search-icon" />
     <a href="/" class="navbar__back">На главную</a>
-    <button class="navbar__button button">Для организаций</button>
+    <a href="/#application" class="navbar__button button">Для организаций</a>
 
     <div class="navbar__modal">
       <h3 class="navbar__modal__title">Результаты поиска:</h3>
@@ -36,7 +37,7 @@
             <p class="navbar__modal__info__courses">
               HTML, CSS, Javascript и др.
             </p>
-            <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+            <a href="center.html" class="navbar__modal__info__button">Подробнее</a>
           </div>
         </div>
         <div class="navbar__modal__card">
@@ -50,7 +51,7 @@
             <p class="navbar__modal__info__courses">
               HTML, CSS, Javascript и др.
             </p>
-            <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+            <a href="center.html" class="navbar__modal__info__button">Подробнее</a>
           </div>
         </div>
         <div class="navbar__modal__card">
@@ -64,7 +65,7 @@
             <p class="navbar__modal__info__courses">
               HTML, CSS, Javascript и др.
             </p>
-            <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+            <a href="center.html" class="navbar__modal__info__button">Подробнее</a>
           </div>
         </div>
       </div>
@@ -100,7 +101,7 @@
               <p class="navbar__modal__info__courses">
                 HTML, CSS, Javascript и др.
               </p>
-              <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+              <a href="center.html" class="navbar__modal__info__button">Подробнее</a>
             </div>
           </div>
           <div class="navbar__modal__card">
@@ -114,7 +115,7 @@
               <p class="navbar__modal__info__courses">
                 HTML, CSS, Javascript и др.
               </p>
-              <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+              <a href="center.html" class="navbar__modal__info__button">Подробнее</a>
             </div>
           </div>
         </div>
@@ -123,9 +124,9 @@
     </div>
     <img src="images/navbar-menu.svg" alt="menu" class="navbar__hamburger" />
     <ul class="navbar__menu">
-      <li class="navbar__menu__item"><a href="#!" class="navbar__menu__link">Отзывы</a></li>
-      <li class="navbar__menu__item"><a href="#!" class="navbar__menu__link">Для организаций</a></li>
-      <li class="navbar__menu__item"><a href="#!" class="navbar__menu__link">Цель проекта</a></li>
+      <li class="navbar__menu__item"><a href="/#reviews" class="navbar__menu__link">Отзывы</a></li>
+      <li class="navbar__menu__item"><a href="/#application-mob" class="navbar__menu__link">Для организаций</a></li>
+      <li class="navbar__menu__item"><a href="/#purpose" class="navbar__menu__link">Цель проекта</a></li>
     </ul>
   </nav>
 
@@ -183,7 +184,10 @@
           </div>
 
           <div class="academy__info__map__container">
-            <img src="images/map.jpg" alt="map address" class="academy__info__map__address">
+            <!-- <div id="googleMap" class="academy__info__map__address"></div> -->
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d749.1612740571053!2d69.28385669293671!3d41.316583755256545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b26831ce201%3A0x88c3d15b86868c18!2sIT%20Park%20Education!5e0!3m2!1sen!2s!4v1616069402079!5m2!1sen!2s" loading="lazy" class="academy__info__map__address"></iframe>
+            <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1xqcUsORZMNyh_ssNHjdKTiyrjbJmbggv&hl=ru" class="academy__info__map__address"></iframe> -->
+            <!-- <div id="map" class="academy__info__map__address"></div> -->
           </div>
       </div>
     </section>
@@ -202,7 +206,10 @@
   </footer>
 
   <!-- FOOTER END -->
-  
+  <!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpFUOEC9QUj9euPW7Rw5eKJa-67hu7l8Y&callback=initMap&libraries=&v=weekly"
+      async
+    ></script> -->
   <script src="center.js"></script>
 </body>
 </html>

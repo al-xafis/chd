@@ -36,4 +36,6 @@ readMore.addEventListener('click', () => {
   dot.classList.toggle('hide');
 });
 
+map = {disableDefaultUI: true};
+
 

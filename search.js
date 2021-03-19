@@ -30,7 +30,7 @@ mobsearchbar.addEventListener('click', () => {
 
 var swiper_carousel = new Swiper(".carousel-container", {
   slidesPerView: 1,
-  spaceBetween: 500,
+  spaceBetween: 3000,
   loop: true,
   pagination: {
     el: ".pagination-carousel",

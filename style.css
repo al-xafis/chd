@@ -17,6 +17,9 @@
   box-sizing: inherit;
 }
 
+:focus {
+  outline: none;
+}
 
 html {
   box-sizing: border-box;
@@ -51,6 +54,7 @@ body {
 @media (min-width: 320px) and (max-width: 695px) {
   .container {
     max-width: 356px;
+    overflow: hidden;
   }
 }
 
@@ -125,7 +129,7 @@ body {
 .navbar__modal {
   display: none;
   position: absolute;
-  top: 85px;
+  top: 89px;
   left: 0;
   padding-left: 140px;
   background-color: #fff;
@@ -262,7 +266,7 @@ body {
   .navbar__modal {
     display: none;
     position: absolute;
-    top: 85px;
+    top: 109px;
     left: 0;
     padding-left: 140px;
     background-color: #fff;
@@ -402,7 +406,7 @@ body {
   }
 
   .navbar__modal {
-    top: 72px;
+    top: 81px;
     padding-left: 60px;
   } 
   
@@ -811,19 +815,59 @@ body {
   font-size: 16px;
   font-weight: 300;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* cursor: pointer; */
 }
 
-.tick {
+label {
+  cursor: pointer;
+}
+
+[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+}
+
+[type="checkbox"] {
+  display: none;
+  background: url("images/check.svg") no-repeat;
+  background-size: contain;
+  margin-right: 1.5px;
+  width: 12px;
+  height: 9px;
+  
+}
+
+[type="checkbox"]:checked {
   display: block;
 }
 
-.tick::after {
-  font-weight: 500;
-  font-family: Arial, Helvetica, sans-serif;
-  content: "L";
-  transform: scaleX(-1) rotate(-35deg);
-  position: absolute;
-  right: 14px;
+@media (min-width: 1153px) {
+  [type="checkbox"] {
+    margin-right: 4px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (min-width: 696px) and (max-width: 970px) {
+  [type="checkbox"] {
+    margin-right: 2.4px;
+    width: 12px;
+    height: 9px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 695px) {
+  [type="checkbox"] {
+    margin-right: 2.5px;
+    width: 12px;
+    height: 9px;
+  }
 }
 
 .courses {
@@ -1425,6 +1469,8 @@ padding-top: 40px;
 }
 
 .application__form {
+  display: flex;
+  flex-direction: column;
   margin-top: 35px;
   width: 352px;
 }
@@ -1503,6 +1549,8 @@ padding-top: 40px;
   font-size: 18px;
   font-weight: 700;
   margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
 }
 
 .application__img__container {
@@ -1565,8 +1613,8 @@ padding-top: 40px;
   .application__button {
     margin-top: 30px;
     font-size: 24px;
-    width: auto;
-    height: auto;
+    width: 286px;
+    height: 50px;
     padding: 9px 78px;
   }
 
@@ -1608,6 +1656,17 @@ padding-top: 40px;
     font-size: 14px;
     padding: 10px;
     -webkit-appearance: none;
+  }
+
+  .application__button {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 10px 45px;
+    line-height: 21.13px;
+    /* margin: 0; */
+    font-size: 16px;
   }
 
   .application__textarea {
@@ -1736,6 +1795,10 @@ padding-top: 40px;
     width: 50px;
     height: 50px;
   }
+
+  .footer__button {
+    line-height: 18.9px;
+  }
   
   .footer__socials {
     margin-right: 40px;
@@ -1773,4 +1836,57 @@ padding-top: 40px;
     padding: 0;
     font-size: 14px;
   }
+}
+
+
+
+
+/* FIX OF FIXED NAVBAR PROBLEM OF ANCHORS */
+
+#application::before {
+  content: '';
+  display: block;
+  height: 109px;
+  margin-top: -109px;
+  visibility: hidden;
+}
+
+#application-mob::before {
+  content: '';
+  display: block;
+  height: 63px;
+  margin-top: -63px;
+  visibility: hidden;
+}
+
+#purpose::before {
+  content: '';
+  display: block;
+  height: 63px;
+  margin-top: -63px;
+  visibility: hidden;
+}
+
+#centers::before {
+  content: '';
+  display: block;
+  height: 109px;
+  margin-top: -109px;
+  visibility: hidden;
+}
+
+/* #application-box::before {
+  content: '';
+  display: block;
+  height: 109px;
+  margin-top: -109px;
+  visibility: hidden;
+} */
+
+#application-mob-box::before {
+  content: '';
+  display: block;
+  height: 63px;
+  margin-top: -63px;
+  visibility: hidden;
 }

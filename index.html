@@ -36,7 +36,7 @@
               <p class="navbar__modal__info__courses">
                 HTML, CSS, Javascript и др.
               </p>
-              <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+              <a href="center.html" class="navbar__modal__info__button">Подробнее</a>
             </div>
           </div>
           <div class="navbar__modal__card">
@@ -50,7 +50,7 @@
               <p class="navbar__modal__info__courses">
                 HTML, CSS, Javascript и др.
               </p>
-              <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+              <a href="center.html" class="navbar__modal__info__button">Подробнее</a>
             </div>
           </div>
           <div class="navbar__modal__card">
@@ -64,7 +64,7 @@
               <p class="navbar__modal__info__courses">
                 HTML, CSS, Javascript и др.
               </p>
-              <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+              <a href="center.html" class="navbar__modal__info__button">Подробнее</a>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@
                 <p class="navbar__modal__info__courses">
                   HTML, CSS, Javascript и др.
                 </p>
-                <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+                <a href="center.html" class="navbar__modal__info__button">Подробнее</a>
               </div>
             </div>
             <div class="navbar__modal__card">
@@ -115,7 +115,7 @@
                 <p class="navbar__modal__info__courses">
                   HTML, CSS, Javascript и др.
                 </p>
-                <a href="search.html" class="navbar__modal__info__button">Подробнее</a>
+                <a href="center.html" class="navbar__modal__info__button">Подробнее</a>
               </div>
             </div>
           </div>
@@ -124,9 +124,9 @@
       </div>
       <img src="images/navbar-menu.svg" alt="menu" class="navbar__hamburger" />
       <ul class="navbar__menu">
-        <li class="navbar__menu__item"><a href="#!" class="navbar__menu__link">Отзывы</a></li>
-      <li class="navbar__menu__item"><a href="#!" class="navbar__menu__link">Для организаций</a></li>
-      <li class="navbar__menu__item"><a href="#!" class="navbar__menu__link">Цель проекта</a></li>
+        <li class="navbar__menu__item"><a href="#reviews" class="navbar__menu__link">Отзывы</a></li>
+      <li class="navbar__menu__item"><a href="#application-mob" class="navbar__menu__link">Для организаций</a></li>
+      <li class="navbar__menu__item"><a href="#purpose" class="navbar__menu__link">Цель проекта</a></li>
       </ul>
     </nav>
 
@@ -136,7 +136,7 @@
 
       <!-- REVIEWS START -->
 
-      <section class="reviews-box">
+      <section class="reviews-box" id="reviews">
         <div class="reviews__info swiper-container-text">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -191,18 +191,17 @@
                 id="arrow_1"
               />
               <ul class="dropdown__list" id="drop-menu-1">
-                <li class="dropdown__item">Мирзо-Улугбекский</li>
-                <li class="dropdown__item">Юнусабадский</li>
-                <li class="dropdown__item">Мирабадский</li>
-                <li class="dropdown__item">Яшнабадский</li>
-                <li class="dropdown__item">Чиланзарский</li>
-                <li class="dropdown__item">Сергелийский</li>
-                <li class="dropdown__item">Чиланзарский</li>
-                <li class="dropdown__item">Учтепинский</li>
-                <li class="dropdown__item">Бектемирский</li>
-                <li class="dropdown__item">Алмазарский</li>
-                <li class="dropdown__item">Яккасарайский</li>
-                <li class="dropdown__item">Шайхантахурский</li>
+                <li class="dropdown__item"><label for="mirzo-ulugbek">Мирзо-Улугбекский</label><input id="mirzo-ulugbek" type="checkbox"></li>
+                <li class="dropdown__item"><label for="yunusabad">Юнусабадский</label><input  id="yunusabad" type="checkbox"></li>
+                <li class="dropdown__item"><label for="mirabad">Мирабадский</label><input id="mirabad" type="checkbox"></li>
+                <li class="dropdown__item"><label for="yashnabad">Яшнабадский</label><input id="yashnabad" type="checkbox"></li>
+                <li class="dropdown__item"><label for="chilanzar">Чиланзарский</label><input id="chilanzar" type="checkbox"></li>
+                <li class="dropdown__item"><label for="sergeli">Сергелийский</label><input id="sergeli" type="checkbox"></li>
+                <li class="dropdown__item"><label for="uchtepinski">Учтепинский</label><input id="uchtepinski" type="checkbox"></li>
+                <li class="dropdown__item"><label for="bektemirski">Бектемирский</label><input id="bektemirski" type="checkbox"></li>
+                <li class="dropdown__item"><label for="almazarski">Алмазарский</label><input id="almazarski" type="checkbox"></li>
+                <li class="dropdown__item"><label for="yakkasarayski">Яккасарайский</label><input id="yakkasarayski" type="checkbox"></li>
+                <li class="dropdown__item"><label for="shayhantahurski">Шайхантахурский</label><input id="shayhantahurski" type="checkbox"></li>
               </ul>
             </div>
             <div class="centers__dropdown" id="drop-2">
@@ -214,8 +213,8 @@
                 id="arrow_2"
               />
               <ul class="dropdown__list" id="drop-menu-2">
-                <li class="dropdown__item" id="high">Высокая - низкая</li>
-                <li class="dropdown__item" id="low">Низкая - высокая</li>
+                <li class="dropdown__item"><label for="high">Высокая - низкая</label><input id="high" type="checkbox" onclick="selectOnlyThis(this.id)"></li>
+                <li class="dropdown__item"><label for="low">Низкая - высокая</label><input id="low" type="checkbox" onclick="selectOnlyThis(this.id)"></li>
               </ul>
             </div>
           </div>
@@ -302,7 +301,7 @@
                   <a href="center.html" class="carousel__item__button">Оставить отзыв</a>
                 </div>
               </div>
-              <div class="carousel__item">
+              <div class="carousel__item" id="second_row">
                 
                 <div class="carousel__item__info">
                   <h2 class="carousel__item__title">IT-Academy</h2>
@@ -648,7 +647,7 @@
 
       <!-- PURPOSE START -->
       <div class="container">
-      <section class="purpose">
+      <section class="purpose" id="purpose">
         <h1 class="purpose__title">Цель проекта</h1>
         <div class="purpose-box">
           <div class="purpose__img__container">
@@ -676,7 +675,7 @@
       <section class="application" id="application">
         <h1 class="application__title">Оставьте заявку</h1>
         <p class="application__description">Ваша организация будет добавлена после модерации. Фокус-группа переворачивает фирменный стиль, используя опыт предыдущих кампаний. В общем, пустое подмножество расточительно программирует нормальный функциональный анализ, осознав маркетинг как часть производства. К тому же процесс стратегического планирования нетривиален. Фокус-группа переворачивает фирменный стиль, используя опыт предыдущих кампаний.</p>
-        <div class="application-box">
+        <div class="application-box" id="application-box">
           <form class="application__form">
             <div class="application__input-container">
               <p class="application__input__title">Ваше полное имя (ФИО):</p>
@@ -694,7 +693,7 @@
               <p class="application__input__title">Комментарии к заявке:</p>
               <textarea class="application__textarea" placeholder="Ваш комментарий..."></textarea>
             </div>
-            <button class="application__button button">Отправить</button>
+            <a href="#application-box" class="application__button button">Отправить</a>
           </form>
           <div class="application__img__container">
             <img src="images/laptop/application.svg" alt="" class="application__img">
@@ -706,10 +705,10 @@
 
       <!-- APPLICATION MOBILE START -->
 
-      <section class="application-mob" id="application">
+      <section class="application-mob" id="application-mob">
         <h1 class="application__title">Оставьте заявку</h1>
         <p class="application__description">Ваша организация будет добавлена после модерации. Фокус-группа переворачивает фирменный стиль, используя опыт предыдущих кампаний. В общем, пустое подмножество расточительно программирует нормальный функциональный анализ, осознав маркетинг как часть производства. К тому же процесс стратегического планирования нетривиален. Фокус-группа переворачивает фирменный стиль, используя опыт предыдущих кампаний.</p>
-        <div class="application-box">
+        <div class="application-box" id="application-mob-box">
           <form class="application__form">
             <div class="application__input-container">
               <p class="application__input__title">Ваше полное имя (ФИО):</p>
@@ -727,7 +726,7 @@
               <p class="application__input__title">Комментарии к заявке:</p>
               <textarea class="application__textarea" placeholder="Ваш комментарий..."></textarea>
             </div>
-            <button class="application__button button">Отправить</button>
+            <a href="#application-mob-box" class="application__button button">Отправить</a>
           </form>
         </div>
       </section>
