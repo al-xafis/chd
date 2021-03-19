@@ -952,6 +952,8 @@ body {
   background-color: #fff;
   border: 2px solid var(--color-blue);
   color: var(--color-blue);
+  text-decoration: none;
+  text-align: center;
 }
 
 @media (min-width: 1153px) {
