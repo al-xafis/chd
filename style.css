@@ -728,9 +728,13 @@ body {
   }
 
   .reviews__button {
+    display: inline-block;
     margin-top: 30px;
-    width: 230px;
-    height: 50px;
+    width: auto;
+    height: auto;
+    padding: 0 19px;
+    padding-top: 13px;
+    padding-bottom: 14px;
     font-size: 20px;
   }
 
