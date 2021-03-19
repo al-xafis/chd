@@ -76,6 +76,30 @@ dropMenu2.addEventListener('click', (e) => {
 
 
 
+
+// CLOSE DROPDOWN ON CLICK OUTSIDE
+
+window.onclick = function(e) {
+  if (!e.target.matches('.centers__dropdown')) {
+    dropMenu1.classList.remove('block');
+    dropMenu2.classList.remove('block');
+    open_1 = false;
+    open_2 = false;
+    arrow_1.className = "centers__dropdown-arrow";
+    arrow_2.className = "centers__dropdown-arrow";
+    if (open_1) {
+      arrow_1.className = "centers__dropdown-arrow";
+    }
+    
+
+    if (open_2) {
+      arrow_2.className = "centers__dropdown-arrow";
+    }
+  }
+}
+
+
+
 // TICK
 
 // document.querySelectorAll('#drop-menu-1 .dropdown__item').forEach(item => {
