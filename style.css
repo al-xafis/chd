@@ -1013,6 +1013,10 @@ label {
     width: 173px;
   }
 
+  .centers__dropdown:not(:last-child) {
+    margin-right: 8px;
+  }
+
   .courses {
     margin-top: 10px;
     flex-wrap: wrap;
@@ -1835,6 +1839,10 @@ padding-top: 40px;
     padding: 0;
     font-size: 14px;
   }
+
+  /* * {
+    overflow-x: hidden;
+  } */
 }
 
 
