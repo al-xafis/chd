@@ -34,6 +34,13 @@ let dot = document.querySelector('.dot');
 readMore.addEventListener('click', () => {
   more.classList.toggle('show');
   dot.classList.toggle('hide');
+  if (readMore.textContent === "Читать далее...") {
+    readMore.textContent = "Свернуть";
+  }
+   else {
+    readMore.textContent = "Читать далее...";
+   }
+  
 });
 
 map = {disableDefaultUI: true};
