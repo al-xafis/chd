@@ -54,7 +54,6 @@ body {
 @media (min-width: 320px) and (max-width: 695px) {
   .container {
     max-width: 356px;
-    overflow: hidden;
   }
 }
 
@@ -1874,14 +1873,6 @@ padding-top: 40px;
   margin-top: -109px;
   visibility: hidden;
 }
-
-/* #application-box::before {
-  content: '';
-  display: block;
-  height: 109px;
-  margin-top: -109px;
-  visibility: hidden;
-} */
 
 #application-mob-box::before {
   content: '';
