@@ -1048,11 +1048,11 @@ padding-top: 40px;
 }
 
 .carousel-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 900px;
+  display: flex;  /* probably not needed, not sure */
+  justify-content: space-between; /* probably not needed, not sure */
+  flex-wrap: wrap; /* probably not needed, not sure */
+  margin: 0 auto;    /* but this is needed */
+  width: 900px;      /* but this is needed */
 }
 
 

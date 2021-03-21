@@ -150,7 +150,7 @@ var swiper_text = new Swiper(".swiper-container-text", {
 
 var swiper_carousel = new Swiper(".carousel-container", {
   slidesPerView: 1,
-  spaceBetween: 3000,
+  spaceBetween: 4000,
   loop: true,
   pagination: {
     el: ".pagination-carousel",
