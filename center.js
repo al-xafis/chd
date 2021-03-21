@@ -43,6 +43,5 @@ readMore.addEventListener('click', () => {
   
 });
 
-map = {disableDefaultUI: true};
 
 

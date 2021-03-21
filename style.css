@@ -133,7 +133,6 @@ body {
   padding-left: 140px;
   background-color: #fff;
   width: 100%;
-  /* min-height: 700px; */
   box-shadow: 0px 0px 20px rgba(104, 104, 104, 0.17);
   z-index: 99;
 }
@@ -167,7 +166,6 @@ body {
 .navbar__modal__card__img {
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
 }
 
 .navbar__modal__info {
@@ -253,7 +251,6 @@ body {
   .navbar__search::placeholder {
     font-size: 24px;
     line-height: 25.2px;
-    /* padding: 12.5px 0 12.5px 0; */
   }
 
   .search-icon {
@@ -270,7 +267,6 @@ body {
     padding-left: 140px;
     background-color: #fff;
     width: 100%;
-    /* min-height: 700px; */
     box-shadow: 0px 0px 20px rgba(104, 104, 104, 0.17);
     z-index: 99;
   }
@@ -303,7 +299,6 @@ body {
   .navbar__modal__card__img {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
   }
   
   .navbar__modal__info {
@@ -1846,15 +1841,12 @@ padding-top: 40px;
     font-size: 14px;
   }
 
-  /* * {
-    overflow-x: hidden;
-  } */
 }
 
 
 
 
-/* FIX OF FIXED NAVBAR PROBLEM OF ANCHORS */
+/* FIX FOR ANCHORS THAT GO BEYOND THE INTENDED POSITION BECAUSE OF FIXED NAVBAR */
 
 #application::before {
   content: '';
